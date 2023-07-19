@@ -1,0 +1,51 @@
+In file included from ./string_map.h:96,
+                 from ../../../../../taller4/string_map_tests.cpp:2:
+./string_map.hpp: In instantiation of ‘int string_map<T>::count(const string&) const [with T = int; std::string = std::__cxx11::basic_string<char>]’:
+../../../../../taller4/string_map_tests.cpp:8:5:   required from here
+./string_map.hpp:70:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   70 |     for (int i = 0; i < palabra.length(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~
+./string_map.hpp:73:76: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   73 |         if (siguiente == nullptr || (siguiente->definicion == nullptr && i == palabra.length()-1)){
+      |                                                                          ~~^~~~~~~~~~~~~~~~~~~~~
+./string_map.hpp: In instantiation of ‘void string_map<T>::Nodo::borrarTodo() [with T = int]’:
+./string_map.hpp:40:27:   required from ‘string_map<T>::~string_map() [with T = int]’
+../../../../../taller4/string_map_tests.cpp:5:21:   required from here
+./string_map.hpp:47:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<int>::Nodo*, std::allocator<string_map<int>::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   47 |     for (int i = 0; i < hijos.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~
+./string_map.hpp: In instantiation of ‘string_map<T>& string_map<T>::operator=(const string_map<T>&) [with T = int]’:
+./string_map.hpp:9:80:   required from ‘string_map<T>::string_map(const string_map<T>&) [with T = int]’
+../../../../../taller4/string_map_tests.cpp:98:39:   required from here
+./string_map.hpp:15:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   14 |     *this->raiz = *d.raiz;
+  +++ |+    return *this;
+   15 | }
+      | ^
+./string_map.hpp: In instantiation of ‘void string_map<T>::Nodo::borrarTodo() [with T = string_map<int>]’:
+./string_map.hpp:40:27:   required from ‘string_map<T>::~string_map() [with T = string_map<int>]’
+../../../../../taller4/string_map_tests.cpp:141:33:   required from here
+./string_map.hpp:47:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<string_map<int> >::Nodo*, std::allocator<string_map<string_map<int> >::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   47 |     for (int i = 0; i < hijos.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~
+./string_map.hpp: In instantiation of ‘void string_map<T>::Nodo::borrarNodo(std::string) [with T = int; std::string = std::__cxx11::basic_string<char>]’:
+./string_map.hpp:109:23:   required from ‘void string_map<T>::erase(const string&) [with T = int; std::string = std::__cxx11::basic_string<char>]’
+../../../../../taller4/string_map_tests.cpp:178:20:   required from here
+./string_map.hpp:118:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  118 |     for (int i = 0; i < clave.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~
+./string_map.hpp:126:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<int>::Nodo*, std::allocator<string_map<int>::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  126 |     for (int i = 0; i < actual->siguientes.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./string_map.hpp: In instantiation of ‘string_map<T>::Nodo& string_map<T>::Nodo::operator=(const string_map<T>::Nodo&) [with T = int]’:
+./string_map.hpp:14:17:   required from ‘string_map<T>& string_map<T>::operator=(const string_map<T>&) [with T = int]’
+./string_map.hpp:9:80:   required from ‘string_map<T>::string_map(const string_map<T>&) [with T = int]’
+../../../../../taller4/string_map_tests.cpp:98:39:   required from here
+./string_map.hpp:25:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<string_map<int>::Nodo*, std::allocator<string_map<int>::Nodo*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   25 |     for (int i = 0; i < aCopiar.siguientes.size(); ++i) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./string_map.hpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   35 |     }
+  +++ |+return *this;
+   36 | }
+      | ^
